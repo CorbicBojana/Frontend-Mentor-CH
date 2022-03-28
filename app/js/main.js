@@ -1,3 +1,57 @@
+const rating = document.querySelectorAll(".rating_list_item_link");
+const ratingForm = document.querySelector(".rating_form");
+const conRating = document.querySelector(".container_rating");
+const conState = document.querySelector(".container_state");
+let state = document.querySelector(".state");
+
+for (let i = 0; i < rating.length; i++) {
+    rating[i].addEventListener("click", function() {
+        rating[i].classList.remove("active");
+        if (!rating[i].classList.contains("active")) {
+            rating[i].classList.add("active");
+            state.innerHTML = rating[i].innerHTML;
+        }
+    })
+}
+
+ratingForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+    conRating.style.display = "none";
+    conState.style.display = "flex";
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const a = (function() {
 //     return parseInt("1.5")
 // })();
