@@ -1,0 +1,19 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: 'Rubik', sans-serif;
+  overflow-x: hidden;
+}
