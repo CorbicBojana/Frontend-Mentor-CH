@@ -3,54 +3,34 @@ const ratingForm = document.querySelector(".rating_form");
 const conRating = document.querySelector(".container_rating");
 const conState = document.querySelector(".container_state");
 let state = document.querySelector(".state");
+let isClicked = false;
 
 for (let i = 0; i < rating.length; i++) {
+    rating[i].classList.remove("active");
     rating[i].addEventListener("click", function() {
-        rating[i].classList.remove("active");
+        isClicked = true;
         if (!rating[i].classList.contains("active")) {
             rating[i].classList.add("active");
             state.innerHTML = rating[i].innerHTML;
         }
+
+        for (let j = 0; j < rating.length; j++) {
+            if (rating[j] !== rating[i]) {
+                rating[j].classList.remove("active")
+            }
+        }
     })
-}
+};
 
 ratingForm.addEventListener("submit", function(e) {
     e.preventDefault();
+    if (!isClicked) {
+        alert("You must select a value!");
+        return;
+    }
     conRating.style.display = "none";
     conState.style.display = "flex";
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
 
 // const a = (function() {
 //     return parseInt("1.5")
