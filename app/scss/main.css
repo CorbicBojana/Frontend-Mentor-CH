@@ -60,6 +60,20 @@ body {
   overflow-x: hidden;
 }
 
+.intro {
+  margin-bottom: 1.4rem;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.intro_text {
+  margin-bottom: 2.4rem;
+  color: #7c8798;
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
 .holder {
   display: inline-block;
   padding: 1.3rem 1.6rem;
@@ -94,20 +108,6 @@ body {
 
 .container .row .intro_img {
   margin-bottom: 3rem;
-}
-
-.container .row .intro {
-  margin-bottom: 1.4rem;
-  color: white;
-  font-size: 2.4rem;
-  font-weight: 700;
-}
-
-.container .row .intro_text {
-  margin-bottom: 2.4rem;
-  color: #7c8798;
-  font-size: 1.3rem;
-  line-height: 1.3;
 }
 
 .container .row .rating_list {
@@ -164,5 +164,28 @@ body {
   background-color: white;
   color: #fb7413;
   cursor: pointer;
+}
+
+.container_rating {
+  display: none;
+}
+
+.container_state .row {
+  text-align: center;
+}
+
+.container_state .row .state_holder .state_holder_img {
+  margin-bottom: 1.4rem;
+}
+
+.container_state .row .state_holder .state_holder_link {
+  display: inline-block;
+  margin-bottom: 2.8rem;
+  padding: 0.6rem 1.8rem;
+  background-color: #323c49;
+  color: #fb7413;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

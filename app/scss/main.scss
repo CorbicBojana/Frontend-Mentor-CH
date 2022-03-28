@@ -18,6 +18,20 @@ body {
   overflow-x: hidden;
 }
 
+.intro {
+  margin-bottom: 1.4rem;
+  color: $white_color;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.intro_text {
+  margin-bottom: 2.4rem;
+  color: $secondary_color;
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
 .holder {
   display: inline-block;
   padding: 1.3rem 1.6rem;
@@ -41,20 +55,6 @@ body {
 
     .intro_img {
       margin-bottom: 3rem;
-    }
-
-    .intro {
-      margin-bottom: 1.4rem;
-      color: $white_color;
-      font-size: 2.4rem;
-      font-weight: 700;
-    }
-
-    .intro_text {
-      margin-bottom: 2.4rem;
-      color: $secondary_color;
-      font-size: 1.3rem;
-      line-height: 1.3;
     }
 
     .rating_list {
@@ -104,6 +104,36 @@ body {
         color: $primary_color;
         cursor: pointer;
       }
+    }
+  }
+}
+
+.container_rating {
+  display: none;
+}
+
+.container_state {
+
+  .row {
+    text-align: center;
+
+    .state_holder {
+
+      .state_holder_img {
+        margin-bottom: 1.4rem;
+      }
+
+      .state_holder_link {
+        display: inline-block;
+        margin-bottom: 2.8rem;
+        padding: 0.6rem 1.8rem;
+        background-color: lighten($color: $bg_card, $amount: 6);
+        color: $primary_color;
+        border-radius: 2rem;
+        font-size: 1.2rem;
+        text-decoration: none;
+      }
+
     }
   }
 }
